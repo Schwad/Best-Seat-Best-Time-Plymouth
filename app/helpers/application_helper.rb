@@ -16,7 +16,7 @@ module ApplicationHelper
     a.search('tr td:nth-child(2)').each do |row|
        @array_of_availability << row.text.to_f
     end
-    a.search('tr td:nth-child(3)')each do |row|
+    a.search('tr td:nth-child(3)').each do |row|
       @array_of_total << row.text.to_f
     end
 
