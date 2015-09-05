@@ -8,3 +8,7 @@ desc "This task is called by the Heroku scheduler add-on"
     scrape_page
     build_data
   end
+
+  task :clear_data => :environment do
+    Datapoint.destroy_all
+  end

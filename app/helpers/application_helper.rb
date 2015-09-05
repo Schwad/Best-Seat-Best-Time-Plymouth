@@ -40,7 +40,7 @@ module ApplicationHelper
   def build_data
     @array_of_rooms.each_with_index do |val, index|
       Datapoint.create(
-        :free => @array_answer[index].to_f,
+        :free => @array_answer[index].to_s,
         :room_name => val
         )
       puts "#{val} at #{@array_answer[index]}"
