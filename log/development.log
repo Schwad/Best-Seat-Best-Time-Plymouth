@@ -200,3 +200,44 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0], ["room_name", "Babbage 102 Rows A-J"], ["created_at", "2015-09-05 11:20:31.781545"], ["updated_at", "2015-09-05 11:20:31.781545"]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Babbage 102 Rows K-R"], ["created_at", "2015-09-05 11:20:31.803378"], ["updated_at", "2015-09-05 11:20:31.803378"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0], ["room_name", "Cookworthy 517"], ["created_at", "2015-09-05 11:20:31.810834"], ["updated_at", "2015-09-05 11:20:31.810834"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Cookworthy Refectory"], ["created_at", "2015-09-05 11:20:31.818061"], ["updated_at", "2015-09-05 11:20:31.818061"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1], ["room_name", "Cookworthy Study Hub (CKY239)"], ["created_at", "2015-09-05 11:20:31.824928"], ["updated_at", "2015-09-05 11:20:31.824928"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Library level 0 Zone 1"], ["created_at", "2015-09-05 11:20:31.831143"], ["updated_at", "2015-09-05 11:20:31.831143"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0], ["room_name", "Library level 0 Zone 2"], ["created_at", "2015-09-05 11:20:31.838592"], ["updated_at", "2015-09-05 11:20:31.838592"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Library level 0 Zone 3"], ["created_at", "2015-09-05 11:20:31.846501"], ["updated_at", "2015-09-05 11:20:31.846501"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0], ["room_name", "Library level 0 Zone 4"], ["created_at", "2015-09-05 11:20:31.853169"], ["updated_at", "2015-09-05 11:20:31.853169"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Library level 1"], ["created_at", "2015-09-05 11:20:31.859650"], ["updated_at", "2015-09-05 11:20:31.859650"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1], ["room_name", "Library level 2"], ["created_at", "2015-09-05 11:20:31.867566"], ["updated_at", "2015-09-05 11:20:31.867566"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0], ["room_name", "Roland Levinsky 2nd Floor"], ["created_at", "2015-09-05 11:20:31.873773"], ["updated_at", "2015-09-05 11:20:31.873773"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1], ["room_name", "Students Union - The Hive"], ["created_at", "2015-09-05 11:20:31.884273"], ["updated_at", "2015-09-05 11:20:31.884273"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mDatapoint Load (2.7ms)[0m  [1mSELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (1.5ms)[0m  SELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1
