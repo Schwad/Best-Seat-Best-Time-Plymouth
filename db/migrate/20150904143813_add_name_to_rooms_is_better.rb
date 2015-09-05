@@ -1,5 +1,5 @@
 class AddNameToRoomsIsBetter < ActiveRecord::Migration
   def change
-     add_column :datapoints, :room_name, :text
+     change_column :datapoints, :free, :float
   end
 end
