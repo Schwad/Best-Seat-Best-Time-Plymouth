@@ -39,7 +39,6 @@ module ApplicationHelper
 
   def build_data
     @array_of_rooms.each_with_index do |val, index|
-      binding.pry
       Datapoint.create(
         :free => @array_answer[index].to_f,
         :room_name => val
