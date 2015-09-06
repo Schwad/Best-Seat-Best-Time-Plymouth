@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   root 'rooms#index'
   resources :rooms
   resources :datapoints
+  get '/all_logs/', to: 'rooms#display_props'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

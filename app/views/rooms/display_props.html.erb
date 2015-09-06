@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table>
+        <thead>
+          <th>Entry Time</th>
+          <th>Entry Location</th>
+          <th>Entry Free</th>
+        </thead>
+        <tbody>
+          <% @rooms.each do |room| %>
+            <tr>
+
+              <td><%= room.created_at %></td>
+              <td><%= room.room_name %></td>
+              <td><%= room.free %></td>
+            </tr>
+
+          <% end %>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
