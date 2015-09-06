@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 style="text-align:center">Best Seat Best Time Plymouth University</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table style="width:100%">
+        <thead>
+          <tr>
+            <th><strong><h3>Room</h3></strong></th>
+            <th><strong>Avg % Free</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @rooms.each do |room| %>
+          <tr>
+            <td>
+              <%= room.room_name %>
+            </td>
+            <td>
+              <%= Datapoint.all.sample.average_capacity(room.room_name) %>
+            </td>
+          </tr>
+          <% end %>
+
+        </tbody>
+
+      </table>
+
+</div>
