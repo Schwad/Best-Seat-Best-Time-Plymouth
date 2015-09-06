@@ -21,7 +21,7 @@
               <%= room.room_name %>
             </td>
             <td>
-              <%= Datapoint.all.sample.average_capacity(room.room_name) %>
+              <%= number_to_percentage((Datapoint.all.sample.average_capacity(room.room_name)*100 ), precision: 2)%>
             </td>
           </tr>
           <% end %>

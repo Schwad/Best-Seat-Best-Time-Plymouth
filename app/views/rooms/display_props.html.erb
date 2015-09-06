@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <table>
+      <table style="width:100%">
         <thead>
           <th>Entry Time</th>
           <th>Entry Location</th>
@@ -11,9 +11,9 @@
           <% @rooms.each do |room| %>
             <tr>
 
-              <td><%= room.created_at %></td>
+              <td><%= room.created_at.strftime("%m/%d/%Y - %H:%M") %></td>
               <td><%= room.room_name %></td>
-              <td><%= room.free %></td>
+              <td><%= number_to_percentage((room.free * 100), precision: 2)  %></td>
             </tr>
 
           <% end %>
