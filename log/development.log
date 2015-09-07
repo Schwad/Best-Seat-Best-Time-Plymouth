@@ -1481,3 +1481,43 @@ Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-06 19:27:28 +0100
+
+
+Started GET "/" for ::1 at 2015-09-07 10:49:54 +0100
+Processing by RoomsController#index as HTML
+  [1m[36mDatapoint Load (2.1ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (1.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (2.2ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  Rendered rooms/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 343ms (Views: 321.8ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/all_logs" for ::1 at 2015-09-07 10:49:55 +0100
+Processing by RoomsController#display_props as HTML
+  [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  Rendered rooms/display_props.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.8ms)

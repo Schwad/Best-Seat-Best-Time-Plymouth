@@ -8,7 +8,7 @@
           <th>Entry Free</th>
         </thead>
         <tbody>
-          <% @rooms.each do |room| %>
+          <% @rooms.reverse.each do |room| %>
             <tr>
 
               <td><%= room.created_at.strftime("%m/%d/%Y - %H:%M") %></td>
