@@ -2,6 +2,7 @@ class RoomsController < ApplicationController
   def index
     @rooms =  Datapoint.select("room_name").group("room_name")
     @room_array = []
+    @thingy = Datapoint.all.sample
     @rooms.each do |room|
       @room_array << room.room_name
     end

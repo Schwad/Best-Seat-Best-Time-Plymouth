@@ -17,7 +17,7 @@
           </thead>
           <tbody>
             <% @range.each do |hour| %>
-              <% @new_value = Datapoint.all.sample.average_capacity_by_time_of_day(room.room_name, hour) %>
+              <% @new_value = @thingy.average_capacity_by_time_of_day(room.room_name, hour) %>
               <td class="data-cell data-<%= @new_value %>"></td>
 
 
@@ -27,30 +27,4 @@
       </div>
     </div>
   <% end %>
-  <div class="row">
-    <div class="col-md-12">
-      <h2> OLD DATA </h2>
-      <table style="width:100%">
-        <thead>
-          <tr>
-            <th><strong><h3>Room</h3></strong></th>
-            <th><strong>Avg % Free</strong></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @rooms.each do |room| %>
-          <tr>
-            <td>
-              <%= room.room_name %>
-            </td>
-            <td>
-              <%= number_to_percentage((Datapoint.all.sample.average_capacity(room.room_name)*100 ), precision: 2)%>
-            </td>
-          </tr>
-          <% end %>
-
-        </tbody>
-
-      </table>
-
 </div>
