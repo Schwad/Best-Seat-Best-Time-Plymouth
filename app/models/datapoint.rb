@@ -28,7 +28,7 @@ class Datapoint < ActiveRecord::Base
       answer = 10
      else
        answer = ((@divisor.to_f / @total.to_f) * 10).to_i
-e     end
+     end
 
      return answer
   end
