@@ -19,12 +19,17 @@ class Datapoint < ActiveRecord::Base
     @divisor = 0
 
     my_rooms.each do |room|
-       if room.created_at.hour == 11
+       if room.created_at.hour == hour
          @total += 1
         @divisor += room.free
        end
      end
-     answer = ((@total.to_f / @divisor.to_f) * 10).to_i
+     if @total == 0
+      answer = 10
+     else
+       answer = ((@divisor.to_f / @total.to_f) * 10).to_i
+     end
+
      return answer
   end
 end
