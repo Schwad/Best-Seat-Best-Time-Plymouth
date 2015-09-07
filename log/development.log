@@ -1589,3 +1589,156 @@ HINT:  No operator matches the given name and argument type(s). You might need t
   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.5ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Students Union - The Hive"], ["created_at", "2015-09-07 15:32:48.183259"], ["updated_at", "2015-09-07 15:32:48.183259"]]
   [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-09-07 16:52:00 +0100
+Processing by RoomsController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/models/datapoint.rb:19: syntax error, unexpected tIVAR, expecting '('
+    @total = 0
+          ^):
+  app/models/datapoint.rb:19: syntax error, unexpected tIVAR, expecting '('
+  app/controllers/rooms_controller.rb:3:in `index'
+
+
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.2ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (125.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-07 16:52:01 +0100
+Processing by RoomsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/models/datapoint.rb:19: syntax error, unexpected tIVAR, expecting '('
+    @total = 0
+          ^):
+  app/models/datapoint.rb:19: syntax error, unexpected tIVAR, expecting '('
+  app/controllers/rooms_controller.rb:3:in `index'
+
+
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.2ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-07 16:52:41 +0100
+Processing by RoomsController#index as HTML
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+  Rendered rooms/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.3ms)
+
+ActionView::Template::Error (undefined method `average_capacity_by_time_of_day' for #<Class:0x007ff4bbba6258>):
+    17:           </thead>
+    18:           <tbody>
+    19:             <% @range.each do |hour| %>
+    20:               <% @new_value = Datapoint.average_capacity_by_time_of_day(room.room_name, hour) %>
+    21:               <td class="data-cell data-<%= @new_value %>"></td>
+    22: 
+    23: 
+  app/views/rooms/index.html.erb:20:in `block (2 levels) in _app_views_rooms_index_html_erb__4022296800866255090_70344549497580'
+  app/views/rooms/index.html.erb:19:in `block in _app_views_rooms_index_html_erb__4022296800866255090_70344549497580'
+  app/views/rooms/index.html.erb:7:in `_app_views_rooms_index_html_erb__4022296800866255090_70344549497580'
+
+
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.8ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-07 16:53:30 +0100
+Processing by RoomsController#index as HTML
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"
+  Rendered rooms/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `average_capacity_by_time_of_day' for #<Class:0x007ff4bbba6258>):
+    17:           </thead>
+    18:           <tbody>
+    19:             <% @range.each do |hour| %>
+    20:               <% @new_value = Datapoint.average_capacity_by_time_of_day(room.room_name, hour) %>
+    21:               <td class="data-cell data-<%= @new_value %>"></td>
+    22: 
+    23: 
+  app/views/rooms/index.html.erb:20:in `block (2 levels) in _app_views_rooms_index_html_erb__4022296800866255090_70344593982680'
+  app/views/rooms/index.html.erb:19:in `block in _app_views_rooms_index_html_erb__4022296800866255090_70344593982680'
+  app/views/rooms/index.html.erb:7:in `_app_views_rooms_index_html_erb__4022296800866255090_70344593982680'
+
+
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.9ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-07 16:53:36 +0100
+Processing by RoomsController#index as HTML
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+  [1m[35mDatapoint Load (2.1ms)[0m  SELECT "datapoints".* FROM "datapoints"
+  Rendered rooms/index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (undefined method `average_capacity_by_time_of_day' for #<Datapoint::ActiveRecord_Relation:0x007ff4bd324df8>):
+    17:           </thead>
+    18:           <tbody>
+    19:             <% @range.each do |hour| %>
+    20:               <% @new_value = Datapoint.all.average_capacity_by_time_of_day(room.room_name, hour) %>
+    21:               <td class="data-cell data-<%= @new_value %>"></td>
+    22: 
+    23: 
+  app/views/rooms/index.html.erb:20:in `block (2 levels) in _app_views_rooms_index_html_erb__4022296800866255090_70344561631380'
+  app/views/rooms/index.html.erb:19:in `block in _app_views_rooms_index_html_erb__4022296800866255090_70344561631380'
+  app/views/rooms/index.html.erb:7:in `_app_views_rooms_index_html_erb__4022296800866255090_70344561631380'
+
+
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.7ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nickschwaderer/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (98.4ms)
+
+
+Started PUT "/console/repl_sessions/ebadf0bc2cbb0f7b6b510d5151e487c3" for ::1 at 2015-09-07 16:54:26 +0100

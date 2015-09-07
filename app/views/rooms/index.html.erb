@@ -4,13 +4,29 @@
       <h2 style="text-align:center">Best Seat Best Time Plymouth University</h2>
     </div>
   </div>
-  <div class="row">
+  <% @rooms.each do |room| %>
+    <% @range = (0..23) %>
+    <div class="row">
+      <div class="col-md-12">
+        <h3><%= room.room_name %></h3>
+        <table style="width:90%">
+          <thead>
+            <% @range.each do |hour| %>
+              <th><%= hour %></th>
+            <% end %>
+          </thead>
+          <tbody>
+            <% @range.each do |hour| %>
+              <% @new_value = Datapoint.average_capacity_by_time_of_day(room.room_name, hour) %>
+              <td class="data-cell data-<%= @new_value %>"></td>
 
 
-  </div>
-
-
-
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <% end %>
   <div class="row">
     <div class="col-md-12">
       <h2> OLD DATA </h2>

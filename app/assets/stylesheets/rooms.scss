@@ -15,8 +15,14 @@ $10: #FF0D00;
 $border-style: solid black 2px;
 
 td {
+  font-weight: bold;
+}
+
+td {
   .data-cell {
     border: $border-style;
+    height: 30px;
+    width: 20px;
     .data-1 {
       background: $1;
     }
