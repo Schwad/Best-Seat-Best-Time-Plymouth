@@ -14,37 +14,38 @@ $9: #FF7100;
 $10: #FF0D00;
 $border-style: solid black 2px;
 
-
-.data-cell {
-  border: $border-style;
-  .data-1 {
-    background: $1;
-  }
-  .data-2 {
-    background: $2;
-  }
-  .data-3 {
-    background: $3;
-  }
-  .data-4 {
-    background: $4;
-  }
-  .data-5 {
-    background: $5;
-  }
-  .data-6 {
-    background: $6;
-  }
-  .data-7 {
-    background: $7;
-  }
-  .data-8 {
-    background: $8;
-  }
-  .data-9 {
-    background: $9;
-  }
-  .data-10 {
-    background: $10;
+td {
+  .data-cell {
+    border: $border-style;
+    .data-1 {
+      background: $1;
+    }
+    .data-2 {
+      background: $2;
+    }
+    .data-3 {
+      background: $3;
+    }
+    .data-4 {
+      background: $4;
+    }
+    .data-5 {
+      background: $5;
+    }
+    .data-6 {
+      background: $6;
+    }
+    .data-7 {
+      background: $7;
+    }
+    .data-8 {
+      background: $8;
+    }
+    .data-9 {
+      background: $9;
+    }
+    .data-10 {
+      background: $10;
+    }
   }
 }

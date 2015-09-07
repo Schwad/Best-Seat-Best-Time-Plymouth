@@ -12,4 +12,19 @@ class Datapoint < ActiveRecord::Base
     answer = total.to_f / number_of_points.to_f
     return answer
   end
+
+  def average_capacity_by_time_of_day(room_name, hour)
+    my_rooms = Datapoint.where("room_name = ?", room_name)
+    my_rooms.
+    @total = 0
+    @divisor = 0
+
+    my_rooms.each do |room|
+       if room.created_at.hour == 11
+         @total += 1
+        @divisor += room.free
+       end
+     end
+     answer = ((@total.to_f / @divisor.to_f) * 10).to_i
+  end
 end

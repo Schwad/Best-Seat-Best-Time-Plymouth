@@ -1521,3 +1521,71 @@ Processing by RoomsController#display_props as HTML
   [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints".* FROM "datapoints"
   Rendered rooms/display_props.html.erb within layouts/application (27.6ms)
 Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.8ms)
+  [1m[36mDatapoint Load (1.0ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+  [1m[35mDatapoint Load (2.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (3.9ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = '11')[0m
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "created_at"
+LINE 1: ...WHERE (room_name = 'Library level 0 Zone 2') AND (created_at...
+                                                             ^
+: SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = '11')
+  [1m[35mDatapoint Load (1.2ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = 11)
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "created_at"
+LINE 1: ...WHERE (room_name = 'Library level 0 Zone 2') AND (created_at...
+                                                             ^
+: SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = 11)
+  [1m[36mDatapoint Load (1.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = 11)[0m
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "created_at"
+LINE 1: ...WHERE (room_name = 'Library level 0 Zone 2') AND (created_at...
+                                                             ^
+: SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at.hour = 11)
+  [1m[35mDatapoint Load (1.9ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at = 11)
+PG::UndefinedFunction: ERROR:  operator does not exist: timestamp without time zone = integer
+LINE 1: ...(room_name = 'Library level 0 Zone 2') AND (created_at = 11)
+                                                                  ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at = 11)
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at = 11)[0m
+PG::UndefinedFunction: ERROR:  operator does not exist: timestamp without time zone = integer
+LINE 1: ...(room_name = 'Library level 0 Zone 2') AND (created_at = 11)
+                                                                  ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2') AND (created_at = 11)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.9206349206349206], ["room_name", "Babbage 102 Rows A-J"], ["created_at", "2015-09-07 15:32:48.135331"], ["updated_at", "2015-09-07 15:32:48.135331"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.9285714285714286], ["room_name", "Babbage 102 Rows K-R"], ["created_at", "2015-09-07 15:32:48.149053"], ["updated_at", "2015-09-07 15:32:48.149053"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Cookworthy 517"], ["created_at", "2015-09-07 15:32:48.152101"], ["updated_at", "2015-09-07 15:32:48.152101"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 1.0], ["room_name", "Cookworthy Refectory"], ["created_at", "2015-09-07 15:32:48.155149"], ["updated_at", "2015-09-07 15:32:48.155149"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Cookworthy Study Hub (CKY239)"], ["created_at", "2015-09-07 15:32:48.158315"], ["updated_at", "2015-09-07 15:32:48.158315"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.8571428571428571], ["room_name", "Library level 0 Zone 1"], ["created_at", "2015-09-07 15:32:48.161578"], ["updated_at", "2015-09-07 15:32:48.161578"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.8709677419354839], ["room_name", "Library level 0 Zone 2"], ["created_at", "2015-09-07 15:32:48.164726"], ["updated_at", "2015-09-07 15:32:48.164726"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.5116279069767442], ["room_name", "Library level 0 Zone 3"], ["created_at", "2015-09-07 15:32:48.167674"], ["updated_at", "2015-09-07 15:32:48.167674"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.9166666666666666], ["room_name", "Library level 0 Zone 4"], ["created_at", "2015-09-07 15:32:48.170731"], ["updated_at", "2015-09-07 15:32:48.170731"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.6551724137931034], ["room_name", "Library level 1"], ["created_at", "2015-09-07 15:32:48.173802"], ["updated_at", "2015-09-07 15:32:48.173802"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.9090909090909091], ["room_name", "Library level 2"], ["created_at", "2015-09-07 15:32:48.176819"], ["updated_at", "2015-09-07 15:32:48.176819"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.6666666666666666], ["room_name", "Roland Levinsky 2nd Floor"], ["created_at", "2015-09-07 15:32:48.179909"], ["updated_at", "2015-09-07 15:32:48.179909"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Students Union - The Hive"], ["created_at", "2015-09-07 15:32:48.183259"], ["updated_at", "2015-09-07 15:32:48.183259"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
