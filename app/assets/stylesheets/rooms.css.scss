@@ -1,0 +1,43 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+td {
+  font-weight: bold;
+  height: 50px;
+  width: 44px;
+  border: solid black 2px;
+}
+
+
+
+td.data-1 {
+  background-color: #FF0D00;
+}
+td.data-2 {
+  background-color: #FF7100;
+}
+td.data-3 {
+  background-color: #FFA100;
+}
+td.data-4 {
+  background-color: #FFBF00;
+}
+td.data-5 {
+  background-color: #FFDB00;
+}
+td.data-6 {
+  background-color: #FFF800;
+}
+td.data-7 {
+  background-color: #C6D910;
+}
+td.data-8 {
+  background-color: #99D10F;
+}
+td.data-9 {
+  background-color: #4CC10E;
+}
+td.data-10 {
+  background-color: #0DB10D;
+}
