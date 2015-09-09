@@ -21,76 +21,210 @@
               <% case hour %>
               <% when 0 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_0 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 1 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_1 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 2 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_2 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 3 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_3 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 4 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_4 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 5 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_5 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 6 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_6 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 7 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_7 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 8 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_8 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 9 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_9 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 10 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_10 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 11 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_11 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 12 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_12 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 13 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_13 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 14 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_14 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 15 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_15 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 16 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_16 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 17 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_17 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 18 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_18 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 19 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_19 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 20 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_20 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 21 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_21 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 22 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_22 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% when 23 %>
                 <% @new_answer = Day.where("room_name = ?", room.room_name).last.hour_23 %>
-              <td class="data-cell data-<%= @new_answer.to_s[0] %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
+                <% if @new_answer.to_s.length == 3 %>
+                  <% @my_data = 10 %>
+                <% else %>
+                  <% @my_data = @new_answer.to_s[0] %>
+                <% end %>
+
+              <td class="data-cell data-<%= @my_data %>"><span style="color:white;text-align:center;"><strong><%= @new_answer %>%</strong></span></td>
               <% end %>
             <% end %>
           </tbody>

@@ -31700,3 +31700,1178 @@ Processing by RoomsController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
   Rendered rooms/index.html.erb within layouts/application (615.3ms)
 Completed 200 OK in 727ms (Views: 697.6ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-09 21:28:02 +0100
+Processing by RoomsController#index as HTML
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1
+  Rendered rooms/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+SyntaxError - syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:114: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:116: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:121: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 11 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:123: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:123: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:125: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:130: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 12 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:132: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:132: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:139: syntax error, unexpected keyword_when, expecting end-of-input
+'.freeze;               when 13 
+                            ^:
+  app/views/rooms/index.html.erb:114:in `'
+  actionview (4.2.3) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.3) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.3) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.3) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/f4ecaa9a07d1ff64/variables" for ::1 at 2015-09-09 21:28:02 +0100
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+
+
+Started GET "/" for ::1 at 2015-09-09 21:28:36 +0100
+Processing by RoomsController#index as HTML
+  [1m[35mDatapoint Load (2.5ms)[0m  SELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1
+  Rendered rooms/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.5ms)
+
+SyntaxError - syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:104: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:106: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:111: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 11 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:113: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:113: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:115: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:120: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 12 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:122: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:122: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:129: syntax error, unexpected keyword_when, expecting end-of-input
+'.freeze;               when 13 
+                            ^:
+  app/views/rooms/index.html.erb:104:in `'
+  actionview (4.2.3) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.3) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.3) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.3) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/999fb18170052748/variables" for ::1 at 2015-09-09 21:28:36 +0100
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+
+
+Started GET "/" for ::1 at 2015-09-09 21:29:04 +0100
+Processing by RoomsController#index as HTML
+  [1m[35mDatapoint Load (1.0ms)[0m  SELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1
+  Rendered rooms/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+
+SyntaxError - syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:113: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:115: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:120: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 12 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:122: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:122: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:124: syntax error, unexpected keyword_else, expecting keyword_end
+                 else 
+                     ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:129: syntax error, unexpected keyword_when, expecting keyword_end
+'.freeze;               when 13 
+                            ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:131: syntax error, unexpected '<'
+                <% if @new_answer.to_s.length == 3 
+                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:131: syntax error, unexpected tIVAR, expecting keyword_end
+                <% if @new_answer.to_s.length == 3 
+                                 ^
+/Users/nickschwaderer/Progrumms/Best-Seat-Best-Time-Plymouth/app/views/rooms/index.html.erb:138: syntax error, unexpected keyword_when, expecting end-of-input
+'.freeze;               when 14 
+                            ^:
+  app/views/rooms/index.html.erb:113:in `'
+  actionview (4.2.3) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.3) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.3) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.3) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.3) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.3) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nickschwaderer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/b1a2c81c0ffba09e/variables" for ::1 at 2015-09-09 21:29:04 +0100
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+
+
+Started GET "/" for ::1 at 2015-09-09 21:29:45 +0100
+Processing by RoomsController#index as HTML
+  [1m[35mDatapoint Load (1.1ms)[0m  SELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDay Load (1.2ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows A-J')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Roland Levinsky 2nd Floor')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDay Load (0.5ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 3')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDay Load (0.7ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Students Union - The Hive')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDay Load (0.7ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy 517')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Refectory')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDay Load (0.5ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 2')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Babbage 102 Rows K-R')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDay Load (0.6ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDay Load (0.5ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 0 Zone 4')  ORDER BY "days"."id" DESC LIMIT 1[0m
+  Rendered rooms/index.html.erb within layouts/application (483.8ms)
+Completed 200 OK in 601ms (Views: 573.8ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/assets/application.self-90db5a894948f58709b368dd9b52ad771af643d1b0e9321eb359c839c9f57b5f.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/rooms.self-9a9c96f2abd435cdfa53ef42296de0c8de2673212070be51134d7b2e7988d6c8.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/days.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-09 21:29:46 +0100
