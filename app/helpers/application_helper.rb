@@ -58,7 +58,7 @@ module ApplicationHelper
       @range = (0..23)
       @new_value = []
       @range.each do |hour|
-        @new_value = @thingy.average_capacity_by_time_of_day(room.room_name, hour)
+        @new_value << @thingy.average_capacity_by_time_of_day(room.room_name, hour)
       end
       Day.create(
         :room_name => room.room_name,
