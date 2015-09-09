@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_name: MyText
+  hour_0: 1
+  hour_1: 1
+  hour_2: 1
+  hour_3: 1
+  hour_4: 1
+  hour_5: 1
+  hour_6: 1
+  hour_7: 1
+  hour_8: 1
+  hour_9: 1
+  hour_10: 1
+  hour_11: 1
+  hour_12: 1
+  hour_13: 1
+  hour_14: 1
+  hour_15: 1
+  hour_16: 1
+  hour_17: 1
+  hour_18: 1
+  hour_19: 1
+  hour_20: 1
+  hour_21: 1
+  hour_22: 1
+  hour_23: 1
+
+two:
+  room_name: MyText
+  hour_0: 1
+  hour_1: 1
+  hour_2: 1
+  hour_3: 1
+  hour_4: 1
+  hour_5: 1
+  hour_6: 1
+  hour_7: 1
+  hour_8: 1
+  hour_9: 1
+  hour_10: 1
+  hour_11: 1
+  hour_12: 1
+  hour_13: 1
+  hour_14: 1
+  hour_15: 1
+  hour_16: 1
+  hour_17: 1
+  hour_18: 1
+  hour_19: 1
+  hour_20: 1
+  hour_21: 1
+  hour_22: 1
+  hour_23: 1
