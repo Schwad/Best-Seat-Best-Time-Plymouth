@@ -25133,3 +25133,395 @@ ORDER BY c.conname
   [1m[35mDay Load (1.0ms)[0m  SELECT "days".* FROM "days" WHERE (room_name = 'Library level 1')
   [1m[36mDay Load (0.8ms)[0m  [1mSELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1[0m
   [1m[35mDay Load (0.8ms)[0m  SELECT  "days".* FROM "days" WHERE (room_name = 'Library level 1')  ORDER BY "days"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.9206349206349206], ["room_name", "Babbage 102 Rows A-J"], ["created_at", "2015-09-09 16:54:49.697418"], ["updated_at", "2015-09-09 16:54:49.697418"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.9285714285714286], ["room_name", "Babbage 102 Rows K-R"], ["created_at", "2015-09-09 16:54:49.707105"], ["updated_at", "2015-09-09 16:54:49.707105"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Cookworthy 517"], ["created_at", "2015-09-09 16:54:49.711562"], ["updated_at", "2015-09-09 16:54:49.711562"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 1.0], ["room_name", "Cookworthy Refectory"], ["created_at", "2015-09-09 16:54:49.715568"], ["updated_at", "2015-09-09 16:54:49.715568"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 1.0], ["room_name", "Cookworthy Study Hub (CKY239)"], ["created_at", "2015-09-09 16:54:49.718863"], ["updated_at", "2015-09-09 16:54:49.718863"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.7142857142857143], ["room_name", "Library level 0 Zone 1"], ["created_at", "2015-09-09 16:54:49.726872"], ["updated_at", "2015-09-09 16:54:49.726872"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.8387096774193549], ["room_name", "Library level 0 Zone 2"], ["created_at", "2015-09-09 16:54:49.730716"], ["updated_at", "2015-09-09 16:54:49.730716"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.5116279069767442], ["room_name", "Library level 0 Zone 3"], ["created_at", "2015-09-09 16:54:49.733742"], ["updated_at", "2015-09-09 16:54:49.733742"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.8333333333333334], ["room_name", "Library level 0 Zone 4"], ["created_at", "2015-09-09 16:54:49.737703"], ["updated_at", "2015-09-09 16:54:49.737703"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.7413793103448276], ["room_name", "Library level 1"], ["created_at", "2015-09-09 16:54:49.744046"], ["updated_at", "2015-09-09 16:54:49.744046"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.8181818181818182], ["room_name", "Library level 2"], ["created_at", "2015-09-09 16:54:49.748772"], ["updated_at", "2015-09-09 16:54:49.748772"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["free", 0.7777777777777778], ["room_name", "Roland Levinsky 2nd Floor"], ["created_at", "2015-09-09 16:54:49.754457"], ["updated_at", "2015-09-09 16:54:49.754457"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "datapoints" ("free", "room_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["free", 0.5], ["room_name", "Students Union - The Hive"], ["created_at", "2015-09-09 16:54:49.761319"], ["updated_at", "2015-09-09 16:54:49.761319"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[36mDatapoint Load (1.1ms)[0m  [1mSELECT  "datapoints".* FROM "datapoints"  ORDER BY "datapoints"."id" ASC LIMIT 1[0m
+  [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints"."room_name" FROM "datapoints" GROUP BY "datapoints"."room_name"
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows A-J')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Babbage 102 Rows A-J"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.724438"], ["updated_at", "2015-09-09 16:55:04.724438"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Roland Levinsky 2nd Floor')[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Roland Levinsky 2nd Floor"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.764819"], ["updated_at", "2015-09-09 16:55:04.764819"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.9ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (1.0ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (1.1ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 3')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Library level 0 Zone 3"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.816500"], ["updated_at", "2015-09-09 16:55:04.816500"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (1.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (1.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.9ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.9ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Students Union - The Hive')[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Students Union - The Hive"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.871987"], ["updated_at", "2015-09-09 16:55:04.871987"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36mDatapoint Load (1.3ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (1.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (1.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy 517')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Cookworthy 517"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.929655"], ["updated_at", "2015-09-09 16:55:04.929655"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (1.0ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (1.2ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (1.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 2')[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Library level 0 Zone 2"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:04.981644"], ["updated_at", "2015-09-09 16:55:04.981644"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (1.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (1.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Refectory')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Cookworthy Refectory"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.032189"], ["updated_at", "2015-09-09 16:55:05.032189"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.8ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (1.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (1.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35mDatapoint Load (1.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')
+  [1m[36mDatapoint Load (1.1ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Cookworthy Study Hub (CKY239)')[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Cookworthy Study Hub (CKY239)"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.080192"], ["updated_at", "2015-09-09 16:55:05.080192"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (1.3ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')[0m
+  [1m[35mDatapoint Load (1.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 1')
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Library level 0 Zone 1"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.128381"], ["updated_at", "2015-09-09 16:55:05.128381"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (1.1ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (1.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 2')[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Library level 2"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.184182"], ["updated_at", "2015-09-09 16:55:05.184182"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (1.2ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (2.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.7ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.8ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (1.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.9ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (0.7ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')[0m
+  [1m[35mDatapoint Load (1.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Babbage 102 Rows K-R')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Babbage 102 Rows K-R"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.243185"], ["updated_at", "2015-09-09 16:55:05.243185"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (1.5ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (0.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')
+  [1m[36mDatapoint Load (2.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 1')[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"[0m  [["room_name", "Library level 1"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.292895"], ["updated_at", "2015-09-09 16:55:05.292895"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.5ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (1.0ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (1.6ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.6ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36mDatapoint Load (0.4ms)[0m  [1mSELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')[0m
+  [1m[35mDatapoint Load (0.4ms)[0m  SELECT "datapoints".* FROM "datapoints" WHERE (room_name = 'Library level 0 Zone 4')
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "days" ("room_name", "hour_0", "hour_1", "hour_2", "hour_3", "hour_4", "hour_5", "hour_6", "hour_7", "hour_8", "hour_9", "hour_10", "hour_11", "hour_12", "hour_13", "hour_14", "hour_15", "hour_16", "hour_17", "hour_18", "hour_19", "hour_20", "hour_21", "hour_22", "hour_23", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) RETURNING "id"  [["room_name", "Library level 0 Zone 4"], ["hour_0", 0], ["hour_1", 1], ["hour_2", 0], ["hour_3", 1], ["hour_4", 0], ["hour_5", 0], ["hour_6", 0], ["hour_7", 0], ["hour_8", 0], ["hour_9", 0], ["hour_10", 0], ["hour_11", 0], ["hour_12", 0], ["hour_13", 0], ["hour_14", 0], ["hour_15", 0], ["hour_16", 0], ["hour_17", 0], ["hour_18", 0], ["hour_19", 0], ["hour_20", 0], ["hour_21", 0], ["hour_22", 0], ["hour_23", 0], ["created_at", "2015-09-09 16:55:05.350302"], ["updated_at", "2015-09-09 16:55:05.350302"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
