@@ -12,3 +12,7 @@ desc "This task is called by the Heroku scheduler add-on"
   task :clear_data => :environment do
     Datapoint.destroy_all
   end
+
+  task :write_averages => :environment do
+    write_averages_to_json_file_for_quick_reading
+  end

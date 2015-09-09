@@ -53,4 +53,17 @@ module ApplicationHelper
 
 
   end
+
+  def write_averages_to_json_file_for_quick_reading
+    @rooms =  Datapoint.select("room_name").group("room_name")
+    @thingy = Datapoint.first
+    #how to do a hash in a hash? necessary next
+
+    @rooms.each do |room|
+      @range = (0..23)
+      @range.each do |hour|
+        @new_value = @thingy.average_capacity_by_time_of_day(room.room_name, hour)
+      end
+    end
+  end
 end

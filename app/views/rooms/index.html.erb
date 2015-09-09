@@ -19,8 +19,6 @@
             <% @range.each do |hour| %>
               <% @new_value = @thingy.average_capacity_by_time_of_day(room.room_name, hour) %>
               <td class="data-cell data-<%= @new_value %>"></td>
-
-
             <% end %>
           </tbody>
         </table>
