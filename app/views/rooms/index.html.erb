@@ -16,6 +16,7 @@
             <% end %>
           </thead>
           <tbody>
+            <!-- this can be made faster if I store a global hash that is updated daily -->
             <% @range.each do |hour| %>
               <% @new_value = @thingy.average_capacity_by_time_of_day(room.room_name, hour) %>
               <% case hour %>
