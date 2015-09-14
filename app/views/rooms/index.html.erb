@@ -6,7 +6,20 @@
   </div>
   <div class="row">
     <div class="col-md-12" style="background-color:#C8B0B0;">
-      <h4 style="text-align:center"><strong>Displaying average seat availabilities as a percentage. Data calculated from 10:00 14/9/15 to now. View source code: <%= link_to "here", "https://github.com/schwad/Best-Seat-Best-Time-Plymouth" %> </strong></h4>
+      <h4 style="text-align:center"><strong>Data calculated from 10:00 14/9/15 to now. View source code: <%= link_to "here", "https://github.com/schwad/Best-Seat-Best-Time-Plymouth" %> </strong></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Legend:</h3>
+      <div id="legend">
+        <% (1..10).to_a.each do |cell| %>
+          <div class="my-legend data-<%= cell %>">
+            <strong><%= cell %>0%</strong>
+          </div>
+        <% end %>
+      </div>
+      <p style="margin-bottom:-12px; font-style:italic;">(Tip: Hover your mouse over a time slot to see exact average percentage available)</p>
     </div>
   </div>
   <% @rooms.each do |room| %>
