@@ -10,6 +10,16 @@ td {
   text-align: center;
 }
 
+.my-data-span {
+  display: none;
+}
+
+td:hover .my-data-span{
+  display: block;
+  background-color:black;
+  opacity:0.8;
+  font-size:140%;
+}
 
 
 td.data-1 {
