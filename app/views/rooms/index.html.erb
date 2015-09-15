@@ -36,9 +36,9 @@
           <tbody>
             <% Day.where("room_name = ?", room.room_name).last.full_data[1..-1].each_with_index do |item, index| %> <!-- new -->
                 <% if item.to_s.length == 3 %>
-                  <% @my_data = "100" %>
+                  <% @my_data = "10" %>
                 <% else %>
-                  <% @my_data = item.to_s[1] %>
+                  <% @my_data = item.to_s[0] %>
                 <% end %>
               <td class="data-cell data-<%= @my_data %>"><span class="my-data-span" style="color:white;"><strong><%= item %>%</strong></span></td>
             <% end %>
