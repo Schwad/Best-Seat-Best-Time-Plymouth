@@ -1,4 +1,30 @@
 module ApplicationHelper
+
+  def updates_my_config
+    puts "Now updating config..."
+    @rooms = Datapoint.select("room_name").group("room_name")
+    Rails.application.config.my_config = Hash.new()
+    Rails.application.config.my_config["range"] = (0..23).to_a
+
+    @rooms.each do |room|
+
+      my_day_array = []
+      my_room = Day.where("room_name = ?", room.room_name).last
+      puts "Now doing #{my_room.room_name}"
+      my_room.attributes.each do |such_attribute|
+        my_day_array << such_attribute
+      end
+
+      Rails.application.config.my_config[my_room.room_name] = []
+
+      my_day_array[2..-3].each do |room_hour|
+        Rails.application.config.my_config[my_room.room_name] << room_hour[1]
+        puts "Stored in #{room_hour[1]} for #{my_room.room_name}"
+      end
+    end
+  end
+
+
   def scrape_page
     a = Mechanize.new
     a = a.get('https://ict-webtools.plymouth.ac.uk/pcfinder/OpenAccess.aspx?loc=Plymouth')

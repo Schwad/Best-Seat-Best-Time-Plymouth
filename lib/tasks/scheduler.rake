@@ -20,3 +20,7 @@ desc "This task is called by the Heroku scheduler add-on"
   task :write_averages => :environment do
     write_averages_to_json_file_for_quick_reading
   end
+
+  task :update_config_variable => :environment do
+    updates_my_config
+  end
