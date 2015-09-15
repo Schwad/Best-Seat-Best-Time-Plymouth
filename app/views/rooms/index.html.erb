@@ -19,31 +19,48 @@
           </div>
         <% end %>
       </div>
-      <p style="margin-bottom:-12px; font-style:italic;">(Tip: Hover your mouse over a time slot to see exact average percentage available)</p>
+      <p style="font-style:italic;">(Tip: Hover your mouse over a time slot to see exact average percentage available)</p>
     </div>
   </div>
   <% @rooms.each do |room| %>
     <div class="row">
-      <div class="col-md-12">
-        <h3><%= room.room_name %></h3>
-        <table style="width:100%;">
-          <thead>
-            <% @range = (0..23).to_a %>
-            <% @range.each do |hour| %>
-              <th style="border: solid black 2px; text-align: center"><%= hour %>:00</th>
-            <% end %>
-          </thead>
-          <tbody>
-            <% Day.where("room_name = ?", room.room_name).last.full_data[1..-1].each_with_index do |item, index| %> <!-- new -->
-                <% if item.to_s.length == 3 %>
-                  <% @my_data = "10" %>
-                <% else %>
-                  <% @my_data = item.to_s[0] %>
+      <div class="col-md-12 full-room">
+        <div class="row">
+          <div class="col-md-12" style="margin-bottom:-11px;">
+            <h3><%= room.room_name %></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 style="color:green;">Seats Available: <%= Datapoint.where("room_name = ?", room.room_name).last.total_available %> out of <%= Datapoint.where("room_name = ?", room.room_name).last.total_rooms %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table style="width:100%;">
+              <thead>
+                <% @range = (0..23).to_a %>
+                <% @range.each do |hour| %>
+                  <th style="border: solid black 2px; text-align: center"><%= hour %>:00</th>
                 <% end %>
-              <td class="data-cell data-<%= @my_data %>"><span class="my-data-span" style="color:white;"><strong><%= item %>%</strong></span></td>
-            <% end %>
-          </tbody>
-        </table>
+              </thead>
+              <tbody>
+                <% Day.where("room_name = ?", room.room_name).last.full_data[1..-1].each_with_index do |item, index| %> <!-- new -->
+                    <% if item.to_s.length == 3 %>
+                      <% @my_data = "10" %>
+                    <% else %>
+                      <% @my_data = item.to_s[0] %>
+                    <% end %>
+                  <td class="data-cell data-<%= @my_data %>"><span class="my-data-span" style="color:white;"><strong><%= item %>%</strong></span></td>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>

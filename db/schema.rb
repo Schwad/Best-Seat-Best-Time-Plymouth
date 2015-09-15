@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150915111219) do
+ActiveRecord::Schema.define(version: 20150915114235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,9 +19,11 @@ ActiveRecord::Schema.define(version: 20150915111219) do
   create_table "datapoints", force: :cascade do |t|
     t.integer  "room_id"
     t.float    "free"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.text     "room_name"
+    t.integer  "total_rooms"
+    t.integer  "total_available"
   end
 
   create_table "days", force: :cascade do |t|

@@ -50,7 +50,11 @@ module ApplicationHelper
 
     @array_of_availability.each_with_index do |val, index|
       begin
-      @array_answer << (val / @array_of_total[index])
+        starter = []
+        starter << val
+        starter << @array_of_total[index]
+        starter << (val / @array_of_total[index])
+      @array_answer << starter
     rescue
       puts "problem line 32"
       binding.pry
@@ -62,10 +66,16 @@ module ApplicationHelper
 
   def build_data
     @array_of_rooms.each_with_index do |val, index|
-      Datapoint.create(
-        :free => @array_answer[index],
-        :room_name => val
-        )
+      begin
+        Datapoint.create(
+          :free => @array_answer[index][2],
+          :total_rooms => @array_answer[index][1].to_i,
+          :total_available => @array_answer[index][0].to_i,
+          :room_name => val
+          )
+      rescue
+        binding.pry
+      end
       puts "#{val} at #{@array_answer[index]}"
     end
   end

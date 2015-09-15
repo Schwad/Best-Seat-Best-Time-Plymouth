@@ -5,7 +5,7 @@
 td {
   font-weight: bold;
   height: 50px;
-  width: 44px;
+  width: 3%;
   border: solid black 2px;
   text-align: center;
 }
@@ -40,6 +40,11 @@ td:hover .my-data-span{
   background-color:black;
   opacity:0.8;
   font-size:140%;
+}
+
+.full-room {
+  border-bottom: solid black 2px;
+  margin-top: -15px;
 }
 
 
