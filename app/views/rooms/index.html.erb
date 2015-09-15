@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-md-12" style="background-color:#C8B0B0;">
-      <h4 style="text-align:center"><strong>Data calculated from 10:00 14/9/15 to now. View source code: <%= link_to "here", "https://github.com/schwad/Best-Seat-Best-Time-Plymouth" %> </strong></h4>
+      <h4 style="text-align:center"><strong>Real time seat availabilities and running averages on peak times. View source code: <%= link_to "here", "https://github.com/schwad/Best-Seat-Best-Time-Plymouth" %> </strong></h4>
     </div>
   </div>
   <div class="row">
@@ -19,7 +19,7 @@
           </div>
         <% end %>
       </div>
-      <p style="font-style:italic;">(Tip: Hover your mouse over a time slot to see exact average percentage available)</p>
+      <p style="font-style:italic;">(Tip: Hover your mouse over a time slot to see the average percentage of open seats)</p>
     </div>
   </div>
   <% @rooms.each do |room| %>
@@ -65,3 +65,4 @@
     </div>
   <% end %>
 </div>
+<br>
