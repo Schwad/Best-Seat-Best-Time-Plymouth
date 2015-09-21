@@ -13,6 +13,10 @@ desc "This task is called by the Heroku scheduler add-on"
     Datapoint.destroy_all
   end
 
+  task :remove_old_data => :environment do
+    clear_out_data
+  end
+
   task :clear_day => :environment do
     Day.destroy_all
   end

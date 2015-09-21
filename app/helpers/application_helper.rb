@@ -80,9 +80,9 @@ module ApplicationHelper
     end
   end
 
-  def initialize_rooms
-
-
+  def clear_out_data
+     Datapoint.where("created_at < ?", 5.days.ago).destroy_all
+     Day.where("created_at < ?", 5.days.ago).destroy_all
   end
 
   def write_averages_to_json_file_for_quick_reading
