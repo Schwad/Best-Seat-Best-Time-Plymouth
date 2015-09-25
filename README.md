@@ -9,6 +9,7 @@ Data aggregated and analyzed off real time Student Computer Availability Resourc
 ## Next Steps
 
  * On hover show percentage change over last 24 hours; last week
+ *make rake task write values to JSON file BEFORE deleting them to back up the data.
  * Logged times appear to be one hour off
  * Show *currently available* seats if it does not slow down; at least average # total and open seats.
  * Upgrade Heroku billing in order to continue scraping every 10 minutes
