@@ -62,8 +62,10 @@
                     <!-- new rendering of weekly change in hover -->
                     <% if changing < 0 %>
                       <span style="color:red"><%= changing %>%
+                        <% decline = true %>
                     <% else %>
-                      <span style="color:green"><%= changing %>%
+                      <span style="color:green">+<%= changing %>%
+                        <% decline = false %>
                     <% end %>
                   </span>
 
