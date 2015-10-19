@@ -39,7 +39,7 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <% week_change = Day.where("room_name = ?", room.room_name).last.weekly_change %>% change this week %>
+                <% week_change = Day.where("room_name = ?", room.room_name).last.weekly_change %>
                 <% if week_change > 0 %>
                   <h4 style="color:green;"><strong>+<%= week_change %>%</strong> change since last week %></h4>
                 <% else %>
