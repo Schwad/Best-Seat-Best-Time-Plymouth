@@ -27,7 +27,7 @@
       <div class="col-md-12 full-room">
         <div class="row">
           <div class="col-md-4" style="margin-bottom:-11px;">
-            <h3><span class="title"><%= room.room_name %></span></h3>
+            <h3><span class="title"><%= room.room_name %>: <em><%= Day.where("room_name = ?", room.room_name).last.weekly_change %>% change this week</em></span></h3>
           </div>
         </div>
         <div class="row">
