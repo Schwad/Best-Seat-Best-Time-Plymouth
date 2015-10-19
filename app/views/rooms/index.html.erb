@@ -26,8 +26,8 @@
     <div class="row">
       <div class="col-md-12 full-room">
         <div class="row">
-          <div class="col-md-4" style="margin-bottom:-11px;">
-            <h3><span class="title"><%= room.room_name %>: <em><%= Day.where("room_name = ?", room.room_name).last.weekly_change %>% change this week</em></span></h3>
+          <div class="col-md-12" style="margin-bottom:-11px;">
+            <h3><span class="title"><%= room.room_name %></span></h3>
           </div>
         </div>
         <div class="row">
@@ -35,6 +35,16 @@
             <div class="row">
               <div class="col-md-12">
                 <h4 style="color:green;">Seats Available: <%= Datapoint.where("room_name = ?", room.room_name).last.total_available %> out of <%= Datapoint.where("room_name = ?", room.room_name).last.total_rooms %></h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <% week_change = Day.where("room_name = ?", room.room_name).last.weekly_change %>% change this week %>
+                <% if week_change > 0 %>
+                  <h4 style="color:green;"><strong>+<%= week_change %>%</strong> change since last week %></h4>
+                <% else %>
+                  <h4 style="color:red;"><strong><%= week_change %>%</strong> change since last week %></h4>
+                <% end %>
               </div>
             </div>
           </div>
