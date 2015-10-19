@@ -49,13 +49,26 @@
                 <% end %>
               </thead>
               <tbody>
-                <% Day.where("room_name = ?", room.room_name).last.full_data[1..-1].each_with_index do |item, index| %> <!-- new -->
+                <% Day.where("room_name = ?", room.room_name).last.full_data[1..-1].each_with_index do |item, index| %>
+                <!-- grabs last week's data -->
+                    <% old_day = Day.where("room_name = ?", room.room_name).first.full_data[index] %>
+                    <% changing = item - old_day %>
                     <% if item.to_s.length == 3 %>
                       <% @my_data = "10" %>
                     <% else %>
                       <% @my_data = item.to_s[0] %>
                     <% end %>
-                  <td class="data-cell data-<%= @my_data %>"><span class="my-data-span" style="color:white;"><strong><%= item %>%</strong></span></td>
+                  <td class="data-cell data-<%= @my_data %>"><span class="my-data-span" style="color:white;"><strong><%= item %>% <br>
+                    <!-- new rendering of weekly change in hover -->
+                    <% if changing < 0 %>
+                      <span style="color:red"><%= changing %>%
+                    <% else %>
+                      <span style="color:green"><%= changing %>%
+                    <% end %>
+                  </span>
+
+
+                  </strong></span></td>
                 <% end %>
               </tbody>
             </table>
